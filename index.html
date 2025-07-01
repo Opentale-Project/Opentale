@@ -1,18 +1,194 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello Cubis</h1>
-<p>This is the future home of the Opentale project website.</p>
-<p>Join us for early planning stages on Discord!</p>
-<p>https://discord.gg/9cxjhbfp24</p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OpenTale - The Open Source Hytale Project</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Trebuchet MS', sans-serif;
+      background: linear-gradient(to bottom, #392667 0%, #120722 100%);
+      color: #ffffff;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
 
-<h1>About Opentale</h1>
-<p>Summary:This project is an open-source spiritual successor of the cancelled game Hytale by Hypixel Studios. 
-   It is a volunteer-powered project planned to be collaborated on through Github, Google Drive, etc. 
-   It does NOT have a planned release date, but development builds will be available as they are published to Github.</p>
-<p>Key Differences:This project is open-source under the MIT license, meaning it can be edited and distributed freely. 
-  This means that modding would not be limited to in game knick-knacks, 
-  but rather an entire spinoff game could be created without any limitations imposed, 
-  this follows the core Hytale vision of giving players unprecedented creative freedom.</p>
+    a {
+      color: #9a6aff;
+      text-decoration: none;
+    }
+
+    h1, h2 {
+      margin: 0;
+    }
+
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .btn {
+      background: #a676ff;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1.1em;
+      color: #fff;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #a676ff;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .hero-logo {
+      width: 300px;
+      max-width: 90%;
+      margin-bottom: 20px;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    .cta-buttons {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .feature {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid #4e2b8d;
+      border-radius: 15px;
+      padding: 30px;
+      width: 280px;
+      box-shadow: 0 0 15px rgba(154, 106, 255, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px rgba(154, 106, 255, 0.3);
+    }
+
+    footer {
+      padding: 40px 20px;
+      background: #120722;
+      text-align: center;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <div style="
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    width: 1000px;
+    height: 800px;
+    transform: translateX(-50%);
+    background: radial-gradient(circle, rgba(173,112,255,0.3) 0%, transparent 70%);
+    z-index: 0;
+    pointer-events: none;
+    filter: blur(40px);
+  "></div>
+
+  <section class="hero">
+    <div class="hero-content">
+      <img src="logo.png" alt="OpenTale Logo" class="hero-logo" />
+      <h1>Welcome to <span style="color:#c79bff;">OpenTale</span></h1>
+      <p>An future open-source sandbox adventure inspired by Hytale.</p>
+      <div class="cta-buttons">
+        <a href="https://github.com/Opentale-Project/Opentalehttps://github.com/Opentale-Project/Opentale" class="btn">⭐ GitHub</a>
+        <a href="https://discord.gg/EpvWDjuHS6https://discord.gg/EpvWDjuHS6" class="btn">💬 Discord</a>
+      </div>
+    </div>
+  </section>
+  
+    <section style="background: #1a0933;">
+    <h2>We need developers!</h2>
+    <p style="max-width: 650px; margin: 0 auto 30px;">
+      Are you a game developer, artist, modder or just love Hytale’s vision? Join us!
+      OpenTale is looking for passionate creators to shape this spiritual successor.
+    </p>
+    <div class="cta-buttons">
+      <a href="https://github.com/Opentale-Project/Opentale" class="btn">Contribute on GitHub</a>
+      <a href="https://discord.gg/EpvWDjuHS6" class="btn">Join our Discord</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>What is OpenTale?</h2>
+    <p style="max-width: 700px; margin: 20px auto;">
+      OpenTale is a future community-driven, open-source game inspired by the spirit of Hytale.
+      Dive into a voxel-based sandbox world where creativity, adventure and modding possibilities are endless.
+    </p>
+
+    <div class="features">
+      <div class="feature">
+        <h3>🧱 Block-based World</h3>
+        <p>Explore and shape vast worlds built from beautiful, modifiable blocks.</p>
+      </div>
+      <div class="feature">
+        <h3>⚔️ Adventure</h3>
+        <p>Fight, build, craft and survive in an epic fantasy universe.</p>
+      </div>
+      <div class="feature">
+        <h3>⚡ Powerd by  community</h3>
+        <p>We are powerd by the big community from Hytale!</h3>
+      </div>
+      <div class="feature">
+        <h3>🧑‍💻 Open Source</h3>
+        <p>Everything is transparent and hosted on GitHub. Help us build the future.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 OpenTale Project. Not affiliated with Hypixel Studios or Hytale.<br>
+    Built with ❤️ by the community.
+  </footer>
+
 </body>
 </html>
